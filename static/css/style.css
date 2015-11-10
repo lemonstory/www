@@ -47,6 +47,7 @@ body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";font-size
 	}
 	.left .right {
 		float: none;
+		width: auto;
 	}
 
 	.m1{
@@ -54,8 +55,15 @@ body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";font-size
 	}
 
 	.m1 h1{
+
+		margin:0 auto;
 		font-size:18px;
 		text-align:center;
+	}
+
+	.downloadCell{
+		
+		padding-top:6px;
 	}
 }
 
