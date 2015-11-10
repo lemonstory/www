@@ -32,6 +32,12 @@ body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";font-size
 		padding-left: 6px;
 		padding-right: 6px
 	}
+	.header_nav li {
+		float: none;
+	}
+	.left .right {
+		float: none;
+	}
 }
 
 .header_nav{padding-bottom:60px;font-size:16px;}
