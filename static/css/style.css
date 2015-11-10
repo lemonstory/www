@@ -30,7 +30,8 @@ body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";font-size
 	.wrap {
 		width: auto;
 		padding-left: 6px;
-		padding-right: 6px
+		padding-right: 6px;
+		background:#20B2AA;
 	}
 
 	.header_nav{
