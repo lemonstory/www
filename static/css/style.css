@@ -5,8 +5,41 @@ a,a:hover,a:active,a:focus{text-decoration:none;}
 body,html{width:100%;}
 body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";font-size:16px;background:#fffbf6;}
 
+@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
 /* 首页 */
-.wrap{max-width:1024px;width:90%;margin:0 auto;padding:24px 10px 10px 20px;}
+
+@media (min-width:980px) {
+	
+	.wrap{
+		max-width:1024px;
+		width:90%;
+		margin:0 auto;
+		padding:24px 10px 10px 20px;
+	}
+}
+
+@media (max-width:767px) {
+	.wrap {
+		width: auto;
+		padding-left: 6px;
+		padding-right: 6px
+	}
+
+}
+
+@media (min-width:768px) and (max-width:959px) {
+	.wrap {
+		width: auto;
+		padding-left: 6px;
+		padding-right: 6px
+	}
+}
+
 .header_nav{padding-bottom:60px;font-size:16px;}
 .header_nav li{float:left;}
 .header_nav a{line-height:30px;padding:0 10px;margin:0 9px;display:block;color:#b8b8b8;}
