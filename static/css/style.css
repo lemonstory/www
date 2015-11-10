@@ -3,7 +3,7 @@
 li{list-style:none;}
 a,a:hover,a:active,a:focus{text-decoration:none;}
 body,html{width:100%;}
-body{font-size:16px;background:#fffbf6;}
+body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";font-size:16px;background:#fffbf6;}
 
 /* 首页 */
 .wrap{max-width:1024px;width:90%;margin:0 auto;padding:24px 10px 10px 20px;}
