@@ -5,7 +5,7 @@ body,html{width:100%;}
 body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";font-size:16px;background:#fffbf6;}
 
 /* 首页 */
-@media (min-width:980px){
+@media (min-width:960px){
 	
 	.wrap{
 		max-width:1024px;
@@ -29,7 +29,6 @@ body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";font-size
 	.downloadCell a{display:block;background:#ffc96d;color:#fff;text-align:center;font-size:16px;border-radius:30px;margin-bottom:23px;width: 223px;height:50px;line-height:50px;}
 	.downloadCell a em{display:inline-block;width:26px;height:31px;margin-right:10px;vertical-align:middle;background:url(../img/ios_ico.jpg) no-repeat;background-size:100% 100%;}
 
-	
 	.m2 .txtCell,.m2 .imgCell{width:50%;}
 	.m2 h2{font-size:30px;margin-bottom:40px;}
 	.m2 p{width:385px;margin:0 auto 12px;text-align:left;font-size:16px;line-height:26px;}
@@ -112,7 +111,7 @@ body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";font-size
 
 	.m1 .left img{
 
-		width:100px;
+		width:150px;
 		margin:0 auto 18px;
 		display:block;
 	}
