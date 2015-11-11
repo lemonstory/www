@@ -41,8 +41,9 @@ p { margin:0 }
 
 	.footer{
 
-		margin-top: 20px;
-		padding:20px 0;text-align:right;
+		margin-top:20px;
+		padding:20px 0;
+		text-align:right;
 		border-top:1px solid #e5e5e5;
 	}
 
@@ -91,8 +92,10 @@ p { margin:0 }
 
 	.footer{
 
+		font-size: 12px;
 		margin-top: 20px;
-		padding:20px 0;text-align:right;
+		padding:20px 0;
+		text-align:right;
 		border-top:1px solid #e5e5e5;
 	}
 	.footer em{
@@ -185,7 +188,7 @@ p { margin:0 }
 	.footer{
 		padding:10px 0;text-align:right;
 		text-align:center;
-		font-size: 12px;
+		font-size:12px;
 		border-top:1px solid #e5e5e5;
 	}
 
