@@ -3,6 +3,7 @@ li{list-style:none;}
 a,a:hover,a:active,a:focus{text-decoration:none;}
 body,html{width:100%;}
 body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";font-size:16px;background:#fffbf6;}
+p { margin:0 }
 
 /* 首页 */
 
@@ -33,7 +34,7 @@ body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";font-size
 	
 	.m2 .txtCell,.m2 .imgCell{width:50%;}
 	.m2 h2{font-size:30px;margin-bottom:40px;}
-	.m2 p{width:385px;margin:0 auto 25px;text-align:left;font-size:16px;line-height:26px;}
+	.m2 p{width:385px;margin:0 auto 12px;text-align:left;font-size:16px;line-height:26px;}
 	.m2 .txtCell{text-align:center;color:#6a727a;padding-top:75px;}
 	.m2 .imgCell{text-align:right;}
 	.m2 .imgCell img{width:100%;max-width:509px;}
@@ -184,7 +185,7 @@ body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";font-size
 	.footer{
 		padding:10px 0;text-align:right;
 		text-align:center;
-		font-size: 2px;
+		font-size: 12px;
 		border-top:1px solid #e5e5e5;
 	}
 
@@ -207,7 +208,7 @@ body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";font-size
 	}
 	.m2 p{
 		width:385px;
-		margin:0 auto 25px;
+		margin:0 auto 8px;
 		text-align:left;
 		font-size:14px;
 		line-height:26px;
