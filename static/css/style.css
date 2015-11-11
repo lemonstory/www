@@ -210,7 +210,9 @@ p { margin:0 }
 		margin-bottom:10px;
 	}
 	.m2 p{
-		width:385px;
+
+		width: 100%;
+		max-width:385px;
 		margin:0 auto 6px;
 		text-align:left;
 		font-size:14px;
