@@ -208,7 +208,7 @@ p { margin:0 }
 	}
 	.m2 p{
 		width:385px;
-		margin:0 auto 8px;
+		margin:0 auto 6px;
 		text-align:left;
 		font-size:14px;
 		line-height:26px;
@@ -216,7 +216,7 @@ p { margin:0 }
 	.m2 .txtCell{
 		text-align:center;
 		color:#6a727a;
-		padding-top:5px;
+		padding:5px;
 	}
 
 	.m2 .imgCell{
