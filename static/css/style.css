@@ -110,6 +110,13 @@ body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";font-size
 		color:#ffc96d;
 	}
 
+	.m1 .left img{
+
+		width:100px;
+		margin:0 auto 18px;
+		display:block;
+	}
+
 	.m1 .right{
 		text-align: center;
 
