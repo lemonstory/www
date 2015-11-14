@@ -10,6 +10,7 @@ if (DIRECTORY_SEPARATOR == '/'){
 }
 define("HTTP_CACHE", false);
 
+include_once SERVER_ROOT."/config/config.php";
 include_once API_LEMON_ROOT."/config/config.php";
 include_once API_LEMON_ROOT."/config/dbconf.php";
 include_once API_LEMON_ROOT."/libs/functions.php";

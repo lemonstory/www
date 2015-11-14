@@ -56,6 +56,8 @@ class info extends controller
 
         $smartyObj = $this->getSmartyObj();
         $smartyObj->assign('result', $result);
+        $smartyObj->assign('JICDOMAIN', JICDOMAIN);
+        $smartyObj->assign('VERSION', VERSION);
         $smartyObj->display("album/info.html");
     }
 }
