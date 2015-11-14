@@ -83,7 +83,7 @@ abstract class controller
         if (!is_array($scriptArr)){
             return array();
         }
-        list($module, $action) = $scriptArr;
+        @list($module, $action) = $scriptArr;
         $data['module'] = $module;
         $data['action'] = $action;
         
