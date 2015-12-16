@@ -31,47 +31,59 @@
 <div class="wrap-fx">
         <div class="fx_t">
             <div class="leftCell">
-                <img class="img-rounded" src="{$JICDOMAIN}/www/img/story_fm.jpg?v={$VERSION}" />
-                <div class="tag"><i></i>1062</div>
+                <img class="img-rounded" src="{$JICDOMAIN}{$result['albuminfo']['cover']}?v={$VERSION}" />
+                <div class="tag"><i></i>{$result['albuminfo']['listennum']}</div>
             </div>
             <div class="rightCell">
-                <h4>爱吃鱼的大猫咪Tody Is Monday</h4>
+                <h4>{$result['albuminfo']['title']}</h4>
                 <div class="d1">
                 	评级：
                     <p class="level">
-                    <i class="rating_star_select"></i>
-                    <i class="rating_star_select"></i>
-                    <i class="rating_star_select"></i>
-                    <i class="rating_star_select"></i>
-                    <i class="rating_star_normal"></i>
+                    
+                    {assign var="max_star_level" value=5}
+                    {for $var=1 to $max_star_level}
+                        {if 0 != $star_level && $star_level <= $var}
+                            <i class="rating_star_select"></i>
+                        {else} 
+                            <i class="rating_star_normal"></i>
+                        {/if}
+                    {/for}                  
                     </p>
                 </div>
                 <div class="d2 clearfix"><a href="javascrip:void(0);" class="right"></a></div>
             </div>
         </div>
         <div class="fx_col clearfix">
-        	<div class="d d1"><i></i>收藏</div><b class="divider-vertical"></b><div class="d d2"><i></i>分享</div><b class="divider-vertical"></b><div class="d d3"><i></i>批量下载</div>
+        	<div class="d d1"><i></i>
+            {if $result['albuminfo']['favnum'] == 0}
+            收藏
+            {else}
+            {$result['albuminfo']['favnum']}
+            {/if}
+            </div>
+            <b class="divider-vertical"></b><div class="d d2"><i></i>分享</div><b class="divider-vertical"></b><div class="d d3"><i></i>批量下载</div>
         </div>
-
         <div class="navCell clearfix">
-            <a href="#" class="cur">列表</a>
+            <a href="http://www.xiaoningmeng.net/app/down" class="cur">列表</a>
             <b class="divider-vertical left"></b>
-            <a href="#">简介</a>
+            <a href="http://www.xiaoningmeng.net/app/down">简介</a>
             <b class="divider-vertical left"></b>
-            <a href="#">评论</a>
+            <a href="http://www.xiaoningmeng.net/app/down">评论</a>
         </div>
-
-
-        
         <ul class="staryList">
-        	<li class="clearfix">
+        	
+            {foreach item=item from=$result['storylist'] }
+            <li class="clearfix">
             	<span class="num">1</span>
-                <p>下雨的兔子</p>
-                <a href="javascript:void(0)" class="load_btn">
+                <p>{$item['title']}</p>
+                <a href="http://www.xiaoningmeng.net/app/down" class="load_btn">
                 	<span class="loading"></span>
                     <span class="load_btn_cont"><i></i>下载</span>
                 </a>
             </li>
+            {/foreach}
+
+            <!--
         	<li class="clearfix playing">
             	<span class="num"><i></i></span>
                 <p>下雨的兔子</p>
@@ -85,31 +97,8 @@
                 <p>下雨的兔子</p>
                 <em></em>
             </li>
-            <li class="clearfix">
-                <span class="num">4</span>
-                <p>下雨的兔子</p>
-                <em></em>
-            </li>
-            <li class="clearfix">
-                <span class="num">5</span>
-                <p>下雨的兔子</p>
-                <em></em>
-            </li>
-            <li class="clearfix">
-                <span class="num">6</span>
-                <p>下雨的兔子</p>
-                <em></em>
-            </li>
-            <li class="clearfix">
-                <span class="num">7</span>
-                <p>下雨的兔子</p>
-                <em></em>
-            </li> 
-            <li class="clearfix">
-                <span class="num">8</span>
-                <p>下雨的兔子</p>
-                <em></em>
-            </li>
+            -->
+            
 
         </ul>
         
@@ -120,7 +109,7 @@
 	<div class="upBox">
         <img src="{$JICDOMAIN}/www/img/logo.jpg?v={$VERSION}" />
         <p>小柠檬&nbsp;-&nbsp;儿童智能故事机</p>
-        <a href="" class="btn1">立即下载</a>
+        <a href="http://www.xiaoningmeng.net/app/down" class="btn1">立即下载</a>
         <em class="closeIco"></em>
     </div>
 </div>
