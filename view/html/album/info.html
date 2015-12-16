@@ -31,23 +31,25 @@
 <div class="wrap-fx">
         <div class="fx_t">
             <div class="leftCell">
-                <img class="img-rounded" src="{$JICDOMAIN}{$result['albuminfo']['cover']}?v={$VERSION}" />
+                <img class="img-rounded" src="{$JICDOMAIN}{$result.albuminfo.cover}?v={$VERSION}" />
                 <div class="tag"><i></i>{$result['albuminfo']['listennum']}</div>
             </div>
             <div class="rightCell">
-                <h4>{$result['albuminfo']['title']}</h4>
+                <h4>{$result.albuminfo.title}</h4>
                 <div class="d1">
                 	评级：
                     <p class="level">
                     
                     {assign var="max_star_level" value=5}
-                    {for $var=1 to $max_star_level}
-                        {if 0 != $star_level && $star_level <= $var}
+                    {assign var="index" value=0}
+                    {while $index < $max_star_level}
+                        {if 0 != $star_level && $star_level <= $index}
                             <i class="rating_star_select"></i>
                         {else} 
                             <i class="rating_star_normal"></i>
                         {/if}
-                    {/for}                  
+                        {$index++}
+                    {/while}                  
                     </p>
                 </div>
                 <div class="d2 clearfix"><a href="javascrip:void(0);" class="right"></a></div>
@@ -55,10 +57,10 @@
         </div>
         <div class="fx_col clearfix">
         	<div class="d d1"><i></i>
-            {if $result['albuminfo']['favnum'] == 0}
+            {if $result.albuminfo.favnum == 0}
             收藏
             {else}
-            {$result['albuminfo']['favnum']}
+            {$result.albuminfo.favnum}
             {/if}
             </div>
             <b class="divider-vertical"></b><div class="d d2"><i></i>分享</div><b class="divider-vertical"></b><div class="d d3"><i></i>批量下载</div>
@@ -72,10 +74,10 @@
         </div>
         <ul class="staryList">
         	
-            {foreach item=item from=$result['storylist'] }
+            {foreach item=item from=$result.storylist }
             <li class="clearfix">
             	<span class="num">1</span>
-                <p>{$item['title']}</p>
+                <p>{$item.title}</p>
                 <a href="http://www.xiaoningmeng.net/app/down" class="load_btn">
                 	<span class="loading"></span>
                     <span class="load_btn_cont"><i></i>下载</span>
