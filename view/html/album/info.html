@@ -31,7 +31,9 @@
 <div class="wrap-fx">
         <div class="fx_t">
             <div class="leftCell">
+                <a href="http://www.xiaoningmeng.net/app/down">
                 <img class="img-rounded" src="{$result.albuminfo.cover}?v={$VERSION}" />
+                </a>
                 <div class="tag"><i></i>{$result.albuminfo.listennum']}</div>
             </div>
             <div class="rightCell">
@@ -53,6 +55,7 @@
             </div>
         </div>
         <div class="fx_col clearfix">
+            <a href="http://www.xiaoningmeng.net/app/down">
         	<div class="d d1"><i></i>
             {if $result.albuminfo.favnum == 0}
             收藏
@@ -60,7 +63,14 @@
             {$result.albuminfo.favnum}
             {/if}
             </div>
-            <b class="divider-vertical"></b><div class="d d2"><i></i>分享</div><b class="divider-vertical"></b><div class="d d3"><i></i>批量下载</div>
+            <b class="divider-vertical"></b>
+            <div class="d d2">
+            <i></i>
+            分享
+            </div>
+            <b class="divider-vertical"></b>
+            <div class="d d3"><i></i>批量下载</div>
+            </a>
         </div>
         <div class="navCell clearfix">
             <a href="http://www.xiaoningmeng.net/app/down" class="cur">列表</a>
