@@ -31,8 +31,8 @@
 <div class="wrap-fx">
         <div class="fx_t">
             <div class="leftCell">
-                <img class="img-rounded" src="{$JICDOMAIN}{$result.albuminfo.cover}?v={$VERSION}" />
-                <div class="tag"><i></i>{$result['albuminfo']['listennum']}</div>
+                <img class="img-rounded" src="{$result.albuminfo.cover}?v={$VERSION}" />
+                <div class="tag"><i></i>{$result.albuminfo.listennum']}</div>
             </div>
             <div class="rightCell">
                 <h4>{$result.albuminfo.title}</h4>
@@ -42,14 +42,11 @@
                     
                     {assign var="max_star_level" value=5}
                     {assign var="index" value=0}
-                    {while $index < $max_star_level}
-                        {if 0 != $star_level && $star_level <= $index}
-                            <i class="rating_star_select"></i>
-                        {else} 
-                            <i class="rating_star_normal"></i>
-                        {/if}
-                        {$index++}
-                    {/while}                  
+                    <i class="rating_star_select"></i>
+                    <i class="rating_star_select"></i>
+                    <i class="rating_star_select"></i>
+                    <i class="rating_star_select"></i>
+                    <i class="rating_star_normal"></i>
                     </p>
                 </div>
                 <div class="d2 clearfix"><a href="javascrip:void(0);" class="right"></a></div>
