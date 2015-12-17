@@ -39,14 +39,13 @@
                 <div class="d1">
                 	评级：
                     <p class="level">
-                    
-                    {assign var="max_star_level" value=5}
-                    {assign var="index" value=0}
+                    {foreach item=item from=$star_arr}
+                    {if $result.albuminfo.star_level == $item}
                     <i class="rating_star_select"></i>
-                    <i class="rating_star_select"></i>
-                    <i class="rating_star_select"></i>
-                    <i class="rating_star_select"></i>
+                    {else}
                     <i class="rating_star_normal"></i>
+                    {/if}
+                    {/foreach}
                     </p>
                 </div>
                 <div class="d2 clearfix"><a href="javascrip:void(0);" class="right"></a></div>
