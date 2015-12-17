@@ -40,8 +40,7 @@
                 	评级：
                     <p class="level">
                     {foreach item=item from=$star_arr}
-			{$item} -- {$result.albuminfo.star_level}
-                    {if $result.albuminfo.star_level == $item}
+			        {if $result.albuminfo.star_level == $item}
                     <i class="rating_star_select"></i>
                     {else}
                     <i class="rating_star_normal"></i>
