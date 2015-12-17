@@ -40,6 +40,7 @@
                 	评级：
                     <p class="level">
                     {foreach item=item from=$star_arr}
+			{$item} -- {$result.albuminfo.star_level}
                     {if $result.albuminfo.star_level == $item}
                     <i class="rating_star_select"></i>
                     {else}
@@ -105,7 +106,7 @@
 
 <div class="boxMask">
 	<div class="upBox">
-        <img src="{$JICDOMAIN}/www/img/logo.jpg?v={$VERSION}" />
+        <img src="{$JICDOMAIN}/www/img/logo.png?v={$VERSION}" />
         <p>小柠檬&nbsp;-&nbsp;儿童智能故事机</p>
         <a href="http://www.xiaoningmeng.net/app/down" class="btn1">立即下载</a>
         <em class="closeIco"></em>
