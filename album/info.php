@@ -55,8 +55,11 @@ class info extends controller
         $result['albuminfo']['commentnum'] = (int)$comment->get_total("`albumid`={$album_id}");
         $result['commentlist'] = $comment->get_comment_list("`albumid`={$album_id}", "ORDER BY `id` DESC ");
 
+        //评论星级数组
+        $star_arr = array(1,2,3,4,5);
         $smartyObj = $this->getSmartyObj();
         $smartyObj->assign('result', $result);
+        $smartyObj->assign('star_arr',$star_arr);
         $smartyObj->assign('JICDOMAIN', JICDOMAIN);
         $smartyObj->assign('VERSION', VERSION);
         $smartyObj->display("album/info.html");
