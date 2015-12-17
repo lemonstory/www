@@ -57,8 +57,10 @@ class info extends controller
 
         //评论星级数组
         $star_arr = array(1,2,3,4,5);
+        $star_level = floor($result['albuminfo']['star_level']/$result['albuminfo']['commentnum']);
         $smartyObj = $this->getSmartyObj();
         $smartyObj->assign('result', $result);
+        $smartyObj->assign('star_level',$star_level);
         $smartyObj->assign('star_arr',$star_arr);
         $smartyObj->assign('JICDOMAIN', JICDOMAIN);
         $smartyObj->assign('VERSION', VERSION);
