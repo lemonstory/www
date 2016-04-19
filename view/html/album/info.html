@@ -114,7 +114,7 @@
     <ul class="staryList">
         {foreach item=item from=$result.storylist }
         <li class="clearfix">
-            <span class="num">1</span>
+            <span class="num">{$item@iteration}</span>
             <p>{$item.title}</p>
             <a href="http://www.xiaoningmeng.net/app/down" class="load_btn">
                 <span class="loading"></span>
