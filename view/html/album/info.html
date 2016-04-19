@@ -112,9 +112,9 @@
         <a href="http://www.xiaoningmeng.net/app/down">评论</a>
     </div>
     <ul class="staryList">
-        {foreach item=item from=$result.storylist }
+        {foreach item=item from=$result.storylist name=storylist}
         <li class="clearfix">
-            <span class="num">{$item@iteration}</span>
+            <span class="num">{$smarty.foreach.storylist.iteration}</span>
             <p>{$item.title}</p>
             <a href="http://www.xiaoningmeng.net/app/down" class="load_btn">
                 <span class="loading"></span>
