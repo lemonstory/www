@@ -58,10 +58,19 @@ class info extends controller
         //评论星级数组
         $star_arr = array(1,2,3,4,5);
         $star_level = floor($result['albuminfo']['star_level']/$result['albuminfo']['commentnum']);
+
+        //是否微信访问
+        $user_agent = $_SERVER['HTTP_USER_AGENT'];
+        $is_weixin = false;
+        if (stripos($user_agent, 'MicroMessenger') !== false) {
+            // 非微信浏览器禁止浏览
+            $is_weixin = true;
+        }
         $smartyObj = $this->getSmartyObj();
         $smartyObj->assign('result', $result);
         $smartyObj->assign('star_level',$star_level);
         $smartyObj->assign('star_arr',$star_arr);
+        $smartyObj->assign("is_weixin",$is_weixin);
         $smartyObj->assign('JICDOMAIN', JICDOMAIN);
         $smartyObj->assign('VERSION', VERSION);
         $smartyObj->display("album/info.html");
