@@ -4,7 +4,7 @@ class downapk extends controller
 {
     public function action()
     {
-        $filename  = "xnm_official_2.4.apk";
+        $filename  = "xnm_official_2.5.apk";
         
         $downurl =  JICDOMAIN . "/apk/{$filename}";
         header("Location:".$downurl);
