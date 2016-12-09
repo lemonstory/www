@@ -8,10 +8,10 @@
     <!--下面两个图需要更改-->
     <link rel="apple-touch-startup-image" href="http://jic.xiaoningmeng.net/www/img/index_img1.jpg?v=10010"/>
     <link href="http://jic.xiaoningmeng.net/www/img/logo@2x.png?v=10010" rel="apple-touch-icon-precomposed">
-    <title>宫西达也的人物百科</title>
+    <title>{$userinfo.nickname}的人物百科</title>
     <!--关键字和介绍需要细化-->
     <meta name="keywords" content="">
-    <meta name="description" content="小柠檬提供宫西达也的....">
+    <meta name="description" content="小柠檬提供{$userinfo.nickname}的....">
     {literal}
     <style type="text/css">
         body {
@@ -238,25 +238,19 @@
     <div class="slide" id="p0">
         <div class="jingqing">
             <div class="jingpic"
-                 style="background:url(http://pic.pimg.tw/wenig1203/87c4454269c280a024284288f2b1ef8a.jpg?v=1304847202) no-repeat;background-size: cover;"></div>
-            <h1>宫西达也</h1>
+                 style="background:url({$userinfo.avatar}) no-repeat;background-size: cover;"></div>
+            <h1>{$userinfo.nickname}</h1>
         </div>
         <div class="swxg_xf">
             <h3 class="per-title">人物经历</h3>
             <p class="ysrq_rt">
-            <p>
-                宫西达也毕业于日本大学艺术学部美术学科，开始时，从事人偶剧的舞台美术和平面设计工作，后来进行绘本创作。宫西达也从自己的童年记忆和育儿经验中获取创作灵感，绘本故事温馨、诙谐、结构曲折，独树一帜的画风大胆、有力，甚至可以称为“强悍”，他采用了很现代的绘画技法来表现，使得画面极具视觉冲击力，让读者把注意力集中于眼前图景，关注角色的每一个表情和动作。而这色彩浓重的画面和极具感情色彩的文字相呼应，也受到孩子和成人的广泛欢迎。<br/>
-            </p>
-            <p>
-                宫西达也的一批绘本作品由北京蒲蒲兰公司引进出版，和同期推出的其他绘本一起，宫西达也的书参与推动了中国绘本阅读的新高潮，曾担任中国首届原创图画书大赛评委。他本人也在中国拥有了大批的“粉丝”，除了受到孩子们的喜爱，更得到很多成年读者的拥戴<br/>
-            </p>
+            <div>{$creatorInfo.intro}</div>
         </div>
 
         <div class="swxg_xf">
             <h3 class="per-title">获奖情况</h3>
             <p class="ysrq_rt">
-            <p>《今天运气多好》获讲谈社出版文化奖绘本奖；</p>
-            <p>《爸爸是赛文奥特曼》、《你看起来好像很好吃》均获剑渊绘本乡绘本奖大奖。</p>
+            <div>{$creatorInfo.award}</div>
         </div>
     </div>
 </div>
