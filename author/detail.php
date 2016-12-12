@@ -23,7 +23,7 @@ class authorDetail extends controller
             exit;
         }
         if (!empty($userinfo['avatartime'])) {
-            $userinfo['avatar'] = $alioss->getAvatarUrl($uid, $userinfo['avatartime'], 80);
+            $userinfo['avatar'] = $alioss->getAvatarUrl($uid, $userinfo['avatartime'], 120);
         }
         $creator = new Creator();
         $creatorInfo = $creator->getCreatorInfo($uid);
