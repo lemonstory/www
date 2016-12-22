@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    background-color: #f0f0f0;
+}
+
+hr {
+    margin: 2px 0;
+}
+
+.mod {
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.sub-header {
+    font-weight: 400;
+    margin: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-top: 14px;
+}
+
+.intro {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.box {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.show-more {
+    line-height: 30px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+
+.item-block {
+    display: table;
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 10px 10px;
+    border-bottom: 1px solid #e2e7ed;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-play {
+    padding-left: 10px;
+    color: #ddd;
+    float: right;
+    margin-right: 10%;
+}
+
+.recommend {
+    padding: 5px 5%;
+    border: 0;
+    width: 40%;
+}
+
+.recommend-title {
+    margin: 2px 0;
+    font-weight: 400;
+}
+
+.recommend-listennum {
+    color: #999;
+}
